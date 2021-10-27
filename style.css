@@ -30,6 +30,17 @@
 body{
     Font-size: 18px;
 }
+.container__logo{
+    color: red;
+    background-color: blue;
+}
+
+.container__hamburger{
+    fill: red;
+    color: red;
+    background-color: black;
+    padding: 5px;
+}
 
 
 
