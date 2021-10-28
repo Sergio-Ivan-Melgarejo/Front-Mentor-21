@@ -2,6 +2,7 @@
     /* ### Primary */
     --SoftRed: hsl(7, 99%, 70%);
     --Yellow: hsl(51, 100%, 49%);
+    --Yellow-trasparent: hsla(51, 100%, 49%, 0.6);
     /* (graphic design text) */
     --DarkDesaturatedCyan : hsl(167, 40%, 24%); 
     /* (photography text) */
@@ -14,6 +15,7 @@
     --DarkGrayishBlue: hsl(232, 10%, 55%);
     --GrayishBlue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
+    --White-trasparent: hsla(0, 0%, 100%, 0.205);
 }
 
 /* 
@@ -27,25 +29,179 @@
 - font-family: 'Fraunces', serif;
 */
 
+/*all----------*/
+
 body{
     Font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
 }
+
+.main{
+    min-width: 375px;
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+}
+
+/*header--------*/
+
+.header{
+    background-image: url(/images/mobile/image-header.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+}
+
 .container__logo{
-    color: red;
-    background-color: blue;
+    color: var(--White);
 }
 
-.container__hamburger{
-    fill: red;
-    color: red;
-    background-color: black;
-    padding: 5px;
+/*menu-----------*/
+.container__hamburger-svg:hover{
+    cursor: pointer;
 }
 
+.container__hamburger-svg:hover> path{
+    opacity: .5;
+}
+
+.header__nav{
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: 80px;
+    /* height: 0px;
+    overflow: hidden; */
+}
+
+.nav__ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    transition: height 350ms;
+    background-color: var(--White);
+    position: relative;
+    margin: 30px 0;
+}
+
+.nav__ul::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 40px;
+    height: 30px;
+    background: var(--White);
+    clip-path: polygon(100% 0, 21% 100%, 100% 100%);
+}
+
+.nav__a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px 0;
+    color: var(--DarkGrayishBlue);
+    transition: color 350ms, background-color 350ms;
+}
+
+.nav__a:hover{
+    color: var(--VeryDarkDesaturatedBlue);
+}
+
+.nav__a-contact{
+    background-color: var(--Yellow);
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: var(--VeryDarkDesaturatedBlue);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-size: .8em;
+}
+
+.nav__a-contact:hover{
+    background-color: var(--Yellow-trasparent);
+    color: var(--GrayishBlue);
+}
+
+.header__h1{
+    color: var(--White);
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-top: 60px;
+}
+
+.header__arrow-down{
+    display: block;
+    margin: auto;
+}
+
+/* section-1----------*/
 
 
 
 
+@media screen and (min-width: 800px) {
+
+    
+    .header{
+        background-image: url(/images/desktop/image-header.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+    }
+
+    .container__logo{
+        align-self: center;   
+    }
+
+    /*menu--------------*/
+
+    .container__hamburger-svg{
+        display: none;
+    }
+
+    .header__nav{
+        position: static;
+    }
+
+    .nav__ul{
+        background-color: transparent;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav__ul::before{
+        display: none;
+    }
+
+    .nav__a{
+        color: var(--White);
+    }
+
+    .nav__a-contact{
+        color: var(--VeryDarkDesaturatedBlue);
+        background-color: var(--White);
+    }
+
+    .nav__a-contact:hover{
+        color: var(--White);
+        background-color: var(--White-trasparent);
+    }
+}
 
 
 
@@ -62,5 +218,5 @@ We provide the required social icons. But, if you prefer, you can use a font ico
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px;}
 .attribution a { color: hsl(228, 45%, 44%); } */
