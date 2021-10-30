@@ -326,7 +326,7 @@ body{
     background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
-/* footer -------------------*/
+/* footer ------------------- */
 
 .main__footer{
     background-color: var(--background-02);
@@ -378,19 +378,34 @@ body{
 .footer__svg:hover > .footer__path{
     fill: var(--White);
 }
+
+.attribution{
+    opacity: .6;
+}
+
 /* --------------------------*/
 
 @media screen and (min-width: 800px) {
 
     .header{
         background-image: url(/images/desktop/image-header.jpg);
-        background-size: 100% 100%;
+        background-size: fill;
         background-repeat: no-repeat;
-        min-height: 60vh;
+        min-height: 80vh;
+        padding: 10px 30px;
     }
 
+    .header__container{
+        width: 100%;
+        padding: 0;
+    }
     .container__logo{
         align-self: center;   
+    }
+
+    .header__h1{
+        font-size: 3em;
+        padding: 30px 0 60px;
     }
 
     /*menu--------------*/
@@ -431,22 +446,98 @@ body{
         color: var(--White);
         background-color: var(--White-trasparent);
     }
+
+    /* section 1 ------------- */
+
+    .section-1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .section-1__img{
+        height: 100%;
+    }
+
+    .section-1__img-1{
+        background-image: url(images/desktop/image-transform.jpg);
+        grid-column: 2/3;
+    }
+
+    .section-1__img-2{
+        background-image: url(images/desktop/image-stand-out.jpg);
+    }
+
+    .section-1__img-3{
+        background-image: url(images/desktop/image-graphic-design.jpg);
+    }
+
+    .section-1__img-4{
+        background-image: url(images/desktop/image-photography.jpg);
+    }
+
+    .section-1__text{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .section-1__text-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .text__container{
+        align-self: center;
+    }
+
+    /* section 2 ----------------- */
+
+    .section-2{
+        padding: 200px 0;
+    }
+
+    .section-2__container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section-2__testimony{
+        max-width: 350px;
+    }
+
+    /* section 3 ------------------ */
+
+    .section-3{
+        flex-wrap: nowrap;
+    }
+    
+    .section-3__img{
+        height: 500px;
+        width: 25%;
+    }
+    
+    .section-3__img-1{
+        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    }
+    
+    .section-3__img-2{
+        background-image: url(images/desktop/image-gallery-orange.jpg);
+    }
+    
+    .section-3__img-3{
+        background-image: url(images/desktop/image-gallery-cone.jpg)
+    }
+    
+    .section-3__img-4{
+        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    /* footer ------------------- */
+    
+    .main__footer{
+        gap: 50px;
+    }
 }
-
-
-
-
-
-
-
-
-/* ## Icons
-
-We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
-
-.attribution { font-size: 11px;}
-.attribution a { color: hsl(228, 45%, 44%); } */
