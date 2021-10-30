@@ -80,8 +80,8 @@ body{
     margin: auto;
     position: absolute;
     top: 80px;
-    /* height: 0px;
-    overflow: hidden; */
+    overflow: hidden; 
+    display: none;
 }
 
 .nav__ul{
@@ -145,11 +145,19 @@ body{
     margin: auto;
 }
 
+/* javascript - nav ------*/
+
+.active-nav{
+    display: block;
+}
+
 /* section-1----------*/
 
+/* javascript ------*/
 
+@media screen and (max-width: 800px) {
 
-
+}
 @media screen and (min-width: 800px) {
 
     
@@ -172,6 +180,7 @@ body{
 
     .header__nav{
         position: static;
+        display: block;
     }
 
     .nav__ul{
