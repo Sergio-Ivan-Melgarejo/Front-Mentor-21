@@ -257,7 +257,7 @@ body{
 
 .section-2{
     background-color: var(--background-01);
-    padding: 40px 20px;
+    padding: 40px 20px 80px;
 }
 
 .section-2__h2{
@@ -295,6 +295,36 @@ body{
 }
 
 /* section 3 --------------- */
+
+.section-3{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.section-3__img{
+    height: 200px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-3__img-1{
+    background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+}
+
+.section-3__img-2{
+    background-image: url(images/mobile/image-gallery-orange.jpg);
+}
+
+.section-3__img-3{
+    background-image: url(images/mobile/image-gallery-cone.jpg)
+}
+
+.section-3__img-4{
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
 
 /* footer -------------------*/
 
