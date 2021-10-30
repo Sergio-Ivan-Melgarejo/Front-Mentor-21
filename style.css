@@ -17,6 +17,7 @@
     --White: hsl(0, 0%, 100%);
     --White-trasparent: hsla(0, 0%, 100%, 0.205);
     --background-01 : #fffbf8;
+    --background-02 : #91d3c5;
 }
 
 /* 
@@ -325,8 +326,59 @@ body{
     background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
-
 /* footer -------------------*/
+
+.main__footer{
+    background-color: var(--background-02);
+    color: var(--DarkDesaturatedCyan);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+    align-items: center;
+
+}
+
+.footer__logo{
+    fill: var(--DarkDesaturatedCyan);
+}
+
+.footer__nav-s{
+    padding: 60px 0;
+}
+
+.footer__ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer__ul-a{
+    gap: 80px;
+}
+
+
+.footer__a {
+    text-decoration: none;
+    color: var(--DarkModerateCyan);
+    transition: color 350ms;
+}
+
+.footer__a:hover {
+    color: var(--White);
+}
+
+.footer__path{
+    transition: fill 350ms;
+}
+
+.footer__svg:hover > .footer__path{
+    fill: var(--White);
+}
+/* --------------------------*/
 
 @media screen and (min-width: 800px) {
 
