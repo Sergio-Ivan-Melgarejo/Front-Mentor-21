@@ -16,6 +16,7 @@
     --GrayishBlue: hsl(210, 4%, 67%);
     --White: hsl(0, 0%, 100%);
     --White-trasparent: hsla(0, 0%, 100%, 0.205);
+    --background-01 : #fffbf8;
 }
 
 /* 
@@ -153,14 +154,110 @@ body{
 
 /* section-1----------*/
 
+.section-1__img{
+    height: 300px;
+    width: 100%;
+    background-image: url(images/mobile/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1__text{
+    padding: 40px 20px 60px;
+    background-color: var(--background-01);
+    min-height: 300px;
+}
+
+.text__h2, .on-image__h3{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: var(--VeryDarkDesaturatedBlue);
+    font-size: 1.8em;
+}
+
+.text__p, .on-image__p{
+    color: var(--DarkGrayishBlue);
+    line-height: 1.6em;
+}
+.text__container{
+    position: relative;
+    display: inline-block;
+}
+
+.text__a{
+    font-family: 'Fraunces', serif;
+    color: var(--VeryDarkDesaturatedBlue);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .9em;
+    z-index: 10;
+    padding: .5em .3em;
+    position: relative;
+}
+
+.text__a-line{
+    width: 100%;
+    background-color: var(--Yellow-trasparent);
+    height: .5em;
+    display: inline-block;
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    opacity: .5;
+    border-radius: 20px;
+    transition: opacity 350ms;
+}
+
+.text__container:hover>div{
+    opacity: 1;
+}
+
+.section-1__img-2{
+    background-image: url(images/mobile/image-stand-out.jpg);
+}
+
+.text__a-line-2{
+    background-color: var(--SoftRed);
+}
+
+.section-1__img-3{
+    background-image: url(images/mobile/image-graphic-design.jpg);
+    min-height: 600px;
+    position: relative;
+}
+
+.img__on-image{
+    position: absolute;
+    bottom: 30px;
+    padding: 20px;
+}
+
+.on-image__h3{
+    color: var(--DarkDesaturatedCyan);
+}
+.on-image__p{
+    color: var(--DarkDesaturatedCyan);
+}
+
+.section-1__img-4{
+    background-image: url(images/mobile/image-photography.jpg);
+    min-height: 600px;
+    position: relative;
+}
+
+.on-image__h3-2{
+    color: var(--DarkBlue);
+}
+.on-image__p-2{
+    color: var(--DarkBlue);
+}
+
+
 /* javascript ------*/
 
-@media screen and (max-width: 800px) {
-
-}
 @media screen and (min-width: 800px) {
 
-    
     .header{
         background-image: url(/images/desktop/image-header.jpg);
         background-size: 100% 100%;
