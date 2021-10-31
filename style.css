@@ -339,10 +339,6 @@ body{
 
 }
 
-.footer__logo{
-    fill: var(--DarkDesaturatedCyan);
-}
-
 .footer__nav-s{
     padding: 60px 0;
 }
