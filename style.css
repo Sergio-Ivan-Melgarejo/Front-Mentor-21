@@ -50,7 +50,7 @@ body{
 /*header--------*/
 
 .header{
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(./images/mobile/image-header.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     min-height: 60vh;
@@ -388,7 +388,7 @@ body{
 @media screen and (min-width: 800px) {
 
     .header{
-        background-image: url(/images/desktop/image-header.jpg);
+        background-image: url(./images/desktop/image-header.jpg);
         background-size: fill;
         background-repeat: no-repeat;
         min-height: 80vh;
